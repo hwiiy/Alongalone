@@ -166,13 +166,15 @@ border-radius: 20px;
 }
 .category_menu {
     display: flex;
-    width: 30%;
+    width:30%;
     height: 300px;
-    background-color: #FDEBC7;
+    background-color: #B9BFBF;
     margin: 0px 10px;
+    border-radius: 20px;
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    color: rgba(0, 0, 0, 0.4);
 }
 
 
