@@ -49,14 +49,17 @@
     flex-direction: column;
 }
 
-.checkbox {
+.login_form_signup a {
+    width: 80%;
     display: flex;
     justify-content: center;
+    margin-left: 40px;
+    align-items: center;
+   
 }
 
-
-.checkbox span {
-    margin: 0px 20px;
+.login-bg-form_signup a:hover {
+    color: var(--lightmint);
 }
 
 .login_form_signup h1 {

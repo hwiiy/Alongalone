@@ -180,6 +180,9 @@ border-radius: 20px;
 
 
 
+
+
+
 /* 여기서 부턴 손 봐야 해 */
 /* 여기서 부턴 손 봐야 해 */
 /* 여기서 부턴 손 봐야 해 */
@@ -189,54 +192,6 @@ border-radius: 20px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-html {
-    background: url("background.jpg") no-repeat center center fixed;
-    background-size: cover;
-}
-.nav-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-    align-items: center;
-}
-
-.nav {
-    display: flex;
-    list-style-type: none;
-}
-
-.logo {
-    margin-right: auto;
-}
-
-.nav li {
-    padding: 0 15px;
-}
-
-.nav li a {
-    text-decoration: none;
-}
-
-.nav li a:link {
-    color: black;
-}
-
-.nav li a:visited {
-    color: white;
-}
-
-.nav li a:hover {
-    color: mediumslateblue;
-}
-
-.main-text {
-    text-align: center;
-    padding: 100px;
-    color: gray;
-    font-size: large;
-    font-weight: bold;
 }
 
 .card {
