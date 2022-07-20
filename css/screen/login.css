@@ -58,7 +58,7 @@
    
 }
 
-.login-bg-form_signup a:hover {
+.lookaround:hover {
     color: var(--lightmint);
 }
 
@@ -82,6 +82,9 @@ font-weight: 800;
     padding: 5px;
 }
 
+.login_form_signup button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
 
 
