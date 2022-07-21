@@ -5,6 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>같이 만큼 같이 있는 혼자, Along alone</title>
+
+    <!-- attention!! -->
+     <!--
+         1. html 관련
+         : 대문자로 만들면 링크 딸 때 인식 못함
+         : index.html 이름은 건드리지 말기 
+         : 공통적으로 적용되는 것들 font, bootstrap, favicon, 그리고 icon 적용해주는 fontawesome script link (얘는 body tag 바로 위에 있음)
+
+         각 html이 뭘의미하는지 궁금하다면 npm 사용하거나 live server 깔아서 확인해보면 알 것임!
+
+         2. css 관련 
+         : 공통적으로 적용되는 요소들 = components (header, bar )
+         : reset.css -> 브라우저가 자동 적용하는 것들 없애는 파일
+         : variables.css -> 공통으로 쓰고 싶은 것들 만들어 뒀음 (색깔 같은 것) 
+            ex. color: var(--mint); 
+            이런 식으로 사용 하면 됨
+         : 추가적으로 css 파일 만드려면 꼭 style.css 상단에 @import 하기 바람. (안그럼 미적용됨)
+         : 색은 내멋대로 냅뒀으니 조화롭게 바꿔주세염 (구글에 color palette 참고)
+
+         3. js 는 아직 딱히 멀 해야될지 몰라서 없음
+          좀 더 공부해서 채워두겠슴....
+
+         4. img는 되도록 png로 저장해주면 좋겠음. 그리고 이름 알기 쉽게 바꿔서 저장해주기! 
+        
+       -->
+
     
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,8 +57,8 @@
             </div>
 
         <div class="header-col"> 
-            <a href="">홈</a>
-            <a href="">맞춤추천</a>
+            <a href="./index.html">홈</a>
+            <a href="./filter.html">맞춤추천</a>
             <a href="">지도</a>
             <a href="#">마이페이지</a>
             <a href="./login.html">로그인</a>
