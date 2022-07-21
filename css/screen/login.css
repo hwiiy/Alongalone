@@ -13,9 +13,8 @@
 
 .login-page-col {
     width: 50%;
-    margin: 20px;
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.02);
 
 }
 
