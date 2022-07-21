@@ -92,6 +92,7 @@ color:#FDEBC7;
     border-radius: 20px;
     margin-top: 30px;
     display: flex;
+    justify-content: space-between;
     }
 
 .map_img {
@@ -99,7 +100,6 @@ color:#FDEBC7;
     margin-left: 150px;
     width: 40%;
     height: 600px;
-
     display: flex;
     padding: 30px;
     align-items: center;
