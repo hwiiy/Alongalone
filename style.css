@@ -2,6 +2,7 @@
 @import url("./css/components/bar.css");
 @import url("./css/components/reset.css");
 @import url("./css/components/variables.css");
+@import url("./css/components/header.css");
 
 /* screen */
 @import url("./css/screen/login.css");
@@ -19,67 +20,6 @@ body {
     height: 10000vh; }
 
 
-header {
-    width: 100%;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.05);
-    z-index: 2;
-    position: fixed;
-    top: 0;
- 
-}
-
-.header-col {
-    display: flex;
-    align-items: center;
-    color: rgba(0, 0, 0, 0.4);
-    margin-right: 50px;
-}
-
-.header-col h1 {
-    margin: 15px;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.header-col a {
-    margin: 0px 5px;
-    font-size: 20px;
-    color:  rgba(0, 0, 0, 0.4);
-    font-weight: 600;
-}
-.header-col a:hover {
-    color: rgba(0, 0, 0, 0.8);
-}
-.header-logo{
-    width: 30px;
-    height: 30px;
-}
-
-.header-col-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:  rgba(0, 0, 0, 0.4)
-}
-.header-col-bar i {
-    margin-left: 5px;
-}
-.header-bar {
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  height: 15px;
-  margin-right: 5px;
-}
-.header-bar-search{
-    width: 30;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
 /* main */
 
 .honnoltest-wrap{
@@ -147,12 +87,8 @@ color:#FDEBC7;
 .honbab_category_wrap {
 background-color:#F0F4F5;
 width: 100%;
-height: 400px;
+height: 500px;
 border-radius: 20px;
-}
-
-.honbab_category_col_wrap {
-    margin-left: 30px;
 }
 
 .category_header {
@@ -161,10 +97,21 @@ border-radius: 20px;
     align-items: center;
     justify-content: space-between;
     color: rgba(0, 0, 0, 0.4);
-    margin: 0px 30px;
-    font-size: 25px; 
-    background-color: #3DB588;
+    margin: 0px 20px;
+    margin-left: 60px;
+    margin-right: 50px;
+    font-size: 30px; 
 }
+
+.look_more:hover {
+    color: black;
+}
+
+.honbab_category_col_wrap {
+    margin-left: 30px;
+}
+
+
 
 .category_col {
     display: flex;
