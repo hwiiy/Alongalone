@@ -7,7 +7,7 @@ header {
     padding: 30px;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.07);
+    background-color: rgba(0, 0, 0, 1);
     z-index: 2;
     position: fixed;
     top: 0;
@@ -25,16 +25,17 @@ header {
     margin: 15px;
     font-size: 30px;
     font-weight: 600;
+    color: white;
 }
 
 .header-col a {
     margin: 0px 5px;
     font-size: 20px;
-    color:  rgba(0, 0, 0, 0.4);
+    color: white;
     font-weight: 600;
 }
 .header-col a:hover {
-    color: rgba(0, 0, 0, 0.8);
+    color: #CBFAC4;
 }
 .header-logo{
     width: 30px;
@@ -49,6 +50,7 @@ header {
 }
 .header-col-bar i {
     margin-left: 5px;
+    color : white;
 }
 .header-bar {
   border: 1px solid rgba(0, 0, 0, 0.4);
