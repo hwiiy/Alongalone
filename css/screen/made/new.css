@@ -1,4 +1,8 @@
 /* honbab title */
+body {
+    background-color: black;
+}
+
 .main_title {
     width: 60%;
     height: 60px;
@@ -24,19 +28,25 @@
     position: relative;
 }
 
+.span_wrap_col1 {
+    margin-top: 10px;
+}
+
 .span_wrap_col1 span {
     margin: 0px 3px;
+    color: white;
    
 }
 
 
 .span_wrap_col1 span:hover, .span_wrap_col2:hover {
-    color: rgba(0, 0, 0, 0.4);
+    color: var(--mint);
 }
 
 .span_wrap_col2 {
     position: absolute;
     right: 52px;
+    color: white;
 }
 /* box */
 #box {
