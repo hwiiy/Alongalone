@@ -5,15 +5,15 @@
 @import url("./css/components/header.css");
 
 /* screen */
-@import url("./css/screen/login.css");
-@import url("./css/screen/card.css");
-@import url("./css/screen/filter.css");
+@import url("./css/screen/made/new.css");
+
 
 
 *, body {
     font-family: 'Edu SA Beginner', cursive;
     font-family: 'Edu VIC WA NT Beginner', cursive;
     font-family: 'Jua', sans-serif;
+    
 }
 
 
@@ -148,93 +148,6 @@ color:#FDEBC7;
 }
 
 
-
-
-/* map */
-
-.map_wrap {
-    background-color:#F0F4F5;
-    width: 100%;
-    height: 700px;
-    border-radius: 20px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    }
-
-.map_img {
-    margin-top: 50px;
-    margin-left: 150px;
-    width: 40%;
-    height: 600px;
-    display: flex;
-    padding: 30px;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-
-.map_content_box {
-
-    margin-top: 60px;
-    width: 60%;
-    height: 600px;
-
-    margin-left: 200px;
-}
-
-.map_title {
-  
-    height: 10%;
-    display: flex;
-    align-items: center;
-}
-
-.map_title input{
-    all: unset;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    width: 80%;
-    font-size: 30px;
-}
-
-.map_title i {
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.map_btn {
-    height: 10%;
-
-    width: 60%;
-    margin-top: 10px;
-    
-}
-
-.map_btn button {
-    margin: 5px;
-    margin-left: 20px;
-}
-
-.store_address_wrap{
-    padding: 20px;
-
-    display: flex;
-    align-items: center;
-    margin: 20px;
-}
-
-.store_address_wrap i{
-    margin: 0px 20px ;
-    font-size: 30px;
-}
-.store_name {
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-.store_address {
-    font-size: 20px;
-}
 
 
 
