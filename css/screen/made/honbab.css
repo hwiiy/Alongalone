@@ -21,9 +21,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-}
-.span_wrap {
     font-weight: 600;
     position: relative;
 }
@@ -37,10 +34,13 @@ body {
     color: white;
    
 }
+.span_wrap_col1 span:first-child {
+    color: var(--mint);
+}
 
 
 .span_wrap_col1 span:hover, .span_wrap_col2:hover {
-    color: var(--mint);
+    color: rgb(111, 110, 110);
 }
 
 .span_wrap_col2 {

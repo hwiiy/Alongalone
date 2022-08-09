@@ -47,7 +47,7 @@ header {
     font-weight: 600;
 }
 .header-col a:hover {
-    color: #CBFAC4;
+    color: rgb(133, 130, 130);
 }
 .header-logo{
     width: 70px;
