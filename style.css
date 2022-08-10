@@ -5,10 +5,10 @@
 @import url("./css/components/header.css");
 
 /* screen */
-@import url("./css/screen/made/honbab.css");
-@import url("./css/screen/made/honcafe.css");
-@import url("./css/screen/made/honsul.css");
-@import url("./css/screen/made/honnol.css");
+@import url("./css/screen/main/honbab.css");
+@import url("./css/screen/main/honcafe.css");
+@import url("./css/screen/main/honsul.css");
+@import url("./css/screen/main/honnol.css");
 
 
 
