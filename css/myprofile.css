@@ -178,10 +178,25 @@ header {
 
 .profile_bg {
     display:flex;
-    background-color: #CCF9C5;
     width: 160px;
     height: 160px;
     border-radius: 50%;
+}
+
+.profile_bg.green {
+    background-color: #CCF9C5;
+}
+
+.profile_bg.pink {
+    background-color: #F5C1CA;
+}
+
+.profile_bg.blue {
+    background-color: #8ADAFC;
+}
+
+.profile_bg.yellow {
+    background-color: #FFE482;
 }
 
 .profile_img {
@@ -206,7 +221,7 @@ header {
     display: flex;
     width: 87px;
     height: 32px;
-    background: #A7CCA2;
+
     border-radius: 10px;
     border: 0;
 
@@ -224,8 +239,36 @@ header {
             inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
-.follow_button:hover {
+.follow_button.green {
+    background: #A7CCA2;
+}
+
+.follow_button.pink {
+    background: #b97c86;
+}
+
+.follow_button.blue {
+    background: #90bbce;
+}
+
+.follow_button.yellow {
+    background: #d2c38d;
+}
+
+.follow_button.green:hover {
     background-color: #CCF9C5;
+}
+
+.follow_button.pink:hover {
+    background-color: #F5C1CA;
+}
+
+.follow_button.blue:hover {
+    background-color: #8ADAFC;
+}
+
+.follow_button.yellow:hover {
+    background-color: #FFE482;
 }
 
 .follow_button:active {
@@ -263,10 +306,24 @@ hr {
 .post {
     width: 270px;
     height: 264px;
-    background: #CCF9C5;
-    /* opacity: 0.8; */
     border-radius: 10px;
     margin: 16px 17px 16px 17px;
+}
+
+.post.green {
+    background: #CCF9C5;
+}
+
+.post.pink {
+    background: #F5C1CA;
+}
+
+.post.blue {
+    background: #8ADAFC;
+}
+
+.post.yellow {
+    background: #FFE482;
 }
 
 .post_row {
