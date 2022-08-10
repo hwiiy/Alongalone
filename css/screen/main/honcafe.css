@@ -15,7 +15,7 @@ body {
 .main_title h1 {
     font-size: 50px;
     font-weight: 700;
-    color: var(--mint);
+    color: var(--blue);
     margin-bottom: 10px;
 }
 .span_wrap {
@@ -36,7 +36,7 @@ body {
    
 }
 .span_wrap_col1 span:first-child {
-    color: var(--mint);
+    color: var(--blue);
 }
 
 
@@ -59,7 +59,7 @@ body {
 .honbab_box {
     width: 60%;
     height: 300px;
-    background-color: var(--mint);
+    background-color: var(--blue);
     border-radius: 30px;
     margin: 30px 100px;
     display: flex;
@@ -138,7 +138,7 @@ body {
 .popular_box{
     width: 25%;
     height: 280px;
-    background-color: var(--mint);
+    background-color: var(--blue);
     margin-right: 100px ;
     margin-top: 30px;
     border-radius: 20px;

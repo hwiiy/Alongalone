@@ -5,11 +5,13 @@
 @import url("./css/components/header.css");
 
 /* screen */
+/* main */
 @import url("./css/screen/main/honbab.css");
 @import url("./css/screen/main/honcafe.css");
 @import url("./css/screen/main/honsul.css");
 @import url("./css/screen/main/honnol.css");
-
+/* detail */
+@import url("./css/screen/detail/honbabdetail.css");
 
 
 *, body {
