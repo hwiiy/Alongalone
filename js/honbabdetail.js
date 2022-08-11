@@ -1,5 +1,6 @@
 const profileImg = document.querySelector(".detail_img")
 const popup = document.getElementById("popup")
+const body = document.querySelector("body")
 
 
 function showProfile(){
