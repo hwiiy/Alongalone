@@ -1,0 +1,237 @@
+#popup {
+    width: 1166px;
+    height: 814px;
+    z-index: 3;
+    position: absolute;
+    left: 173px;
+    top: 0px;
+    font-size: 14px;
+    background: rgb(28, 24, 24);
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.popup_map {
+    width: 100%;
+    /* margin: 0 173px 63px 173px; */
+}
+
+/* 현재위치 */
+.location {
+    margin-top: 36px;
+    margin-left: 46px;
+    height: 100%;
+}
+
+.location.title {
+    width: 10%;
+    float: left;
+    display: flex;
+    box-sizing: border-box;
+
+    margin: 0;
+
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 22px;
+    /* identical to box height, or 88% */
+
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+}
+
+.location.text {
+    width: 90%;
+    display: flex;
+    float: right;
+    box-sizing: border-box;
+
+    margin: 0;
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+}
+
+/* 선 */
+.line {
+    /* position: absolute; */
+    width: 1100px;
+    height: 0px;
+
+    border: 2px solid rgba(153, 153, 153, 0.99);
+    /* margin-left: 33px; */
+    margin: 19px 0 41px 33px;
+}
+
+/* 내용물 */
+.contentbox {
+    margin-left: 20px;
+    height: 100%;
+}
+
+.contentbox.left {
+    width: 40%;
+    /* width: 665px; */
+    float: left;
+    box-sizing: border-box;
+}
+
+.contentbox.right {
+    width: 43%;
+    float: right;
+    box-sizing: border-box;
+}
+
+/* 지도 */
+.map {
+    box-sizing: border-box;
+    width: 580px;
+    height: 476px;
+
+    background-color: antiquewhite;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 0;
+}
+
+/* honbab box */
+
+.honbab_box {
+    /* width: 60%; */
+    width: 580px;
+    height: 156px;
+    background-color: var(--mint);
+    border-radius: 10px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.box_title {
+    display: flex;
+    padding: 16px 0 5px 21px;
+    margin-bottom: 20px;
+}
+
+
+.box_text_wrap {
+    padding: 0;
+    margin: 0;
+    /* margin-top: 10px; */
+    /* height: 50px; */
+    /* padding: 16px 0 0 21px; */
+}
+
+.box_name {
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 25px;
+    line-height: 22px;
+    /* or 88% */
+
+    letter-spacing: 0.1em;
+
+    color: rgba(10, 10, 10, 0.95);
+    /* margin-bottom: 7px; */
+    padding-bottom: 7px;
+}
+
+.box_content_name {
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 138% */
+
+    letter-spacing: 0.1em;
+
+    color: rgba(10, 10, 10, 0.95);
+    margin-top: 10px;
+    /* margin: 10px 0 0 0; */
+}
+
+
+.box_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.box_info_map_wrap {
+    padding-left: 21px;
+}
+
+
+
+.box_info_icon_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 40px;
+    position: relative;
+}
+
+.box_info_icon_wrap i {
+    width: 20px;
+    margin: 10px;
+}
+
+.box_info_icon_wrap .fa-heart:hover {
+    color: red;
+}
+
+.box_info_icon_wrap .fa-comment:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.honnol_review_title {
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    /* or 110% */
+
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.mini_line {
+    width: 551px;
+    height: 0px;
+    margin: 23px 0 0 13px;
+
+    border: 1px solid #000000;
+}
+
+.v-line {
+    position: absolute;
+    width: 601px;
+    height: 0px;
+    left: 390px;
+    top: 450px;
+
+    border: 1px solid #999999;
+    transform: rotate(90deg);
+}
+
