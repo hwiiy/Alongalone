@@ -1,6 +1,8 @@
 body {
     box-sizing: border-box;
+    position: relative;
 }
+
 
 /* honbab title */
 
@@ -182,4 +184,203 @@ left: 7px;
     align-items: center;
     justify-content: center;
 }
+
+/* popup bg  */
+#popup_bg {
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+/* popup */
+/* popup */
+/* popup */
+ 
+
+
+#popup {
+    width: 489px;
+    height: 871px;
+    background-color: rgb(21, 17, 17);
+    position: absolute;
+    top: 20px;
+    left: 478px;
+    font-size: 14px;
+    width: 489px;
+    border: 1px solid #000000;
+    border-radius: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.popup_screen {
+    margin-left: 49px;
+}
+
+/* 프로필 */
+
+.profile {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.profile_picture {
+    margin-left: 113px;
+    margin-bottom: 18px;
+}
+
+.profile_bg {
+    display: flex;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #CCF9C5;
+}
+
+.profile_img {
+    margin: auto;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.name {
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.95);
+    margin-left: 150px;
+}
+
+/*  팔로우 버튼  */
+
+.follow_button {
+    display: flex;
+    width: 87px;
+    height: 32px;
+    margin-left: 150px;
+
+    border-radius: 10px;
+    border: 0;
+
+    text-align: center;
+    padding: 0 20px;
+    padding-top: 2px;
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color: rgba(10, 10, 10, 0.95);
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.follow_button.green {
+    background: #A7CCA2;
+}
+
+.follow_button.green:hover {
+    background-color: #CCF9C5;
+}
+
+.follow_button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.details {
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    display: flex;
+    float: left;
+    margin-left: 56px;
+
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.info {
+    margin-right: 22px;
+}
+
+hr {
+    width: 392px;
+    height: 0px;
+    border: 1px solid rgba(52, 52, 52, 0.95);
+    margin-top: 30px;
+    margin-left: 0;
+}
+
+.about_me {
+    margin-top: 13px;
+    margin-bottom: 29px;
+}
+
+.title {
+    width: 323px;
+    
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+
+    letter-spacing: 0.1em;
+
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.about_me.text {
+    width: 380px;
+
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 22px;
+
+    letter-spacing: 0.1em;
+
+    color: rgba(255, 255, 255, 0.95);
+    margin-top: 23px;
+}
+
+/* 게시물 사진 */
+
+.pictures {
+    margin-top: 13px;
+}
+
+
+.post {
+    width: 184px;
+    height: 218px;
+    border-radius: 10px;
+    margin: 16px 17px 16px 0px;
+}
+
+.post.green {
+    background: #CCF9C5;
+}
+
+.post_row {
+    display: flex;
+    float: left;
+}
+
+
 

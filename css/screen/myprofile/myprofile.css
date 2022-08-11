@@ -1,14 +1,23 @@
+/* 브라우저에서 기본 동작되는 CSS 다 지우는 것 
+예) 클릭하면 밑줄 생기는 것 등등 */
+@import url("/css/components/reset.css");
+
+
 * {
     box-sizing: border-box;
     background-color: black;
 }
 
+
 body {
     font-size: 14px;
 }
+/* header */
 
 header {
     width: 100%;
+    position: fixed;
+    top: 0;
     height: 30px;
     display: flex;
     align-items: center;
@@ -19,19 +28,23 @@ header {
     z-index: 2;
     position: fixed;
     top: 0;
-
+ 
 }
 
 .header-col {
     display: flex;
-    align-items: center;
+    align-items:center;
     color: rgba(0, 0, 0, 0.4);
     margin-right: 50px;
 }
 
-.header-h1 {
+.header-title {
+    height: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    
 }
 
 .header-col span {
@@ -39,7 +52,7 @@ header {
     font-size: 20px;
     font-weight: 600;
     color: white;
-
+    
 }
 
 .header-col a {
@@ -47,54 +60,35 @@ header {
     font-size: 20px;
     color: white;
     font-weight: 600;
-    text-decoration-line: none;
 }
-
-.header-col .green:hover {
-    color: #CBFAC4;
+.header-col a:hover {
+    color: rgb(133, 130, 130);
 }
-
-.header-col .pink:hover {
-    color: #F5C1CA;
-}
-
-.header-col .blue:hover {
-    color: #8ADAFC;
-}
-
-.header-col .yellow:hover {
-    color: #FFE482;
-}
-
-.header-logo {
-    width: 60px;
-    height: 40px;
+.header-logo{
+    width: 70px;
+    height: 60px;
 }
 
 .header-col-bar {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 73px;
-    color: rgba(0, 0, 0, 0.4)
+    margin-right: 150px;
+    color:  rgba(0, 0, 0, 0.4)
 }
-
 .header-col-bar i {
-    margin-left: 10px;
-    color: white;
+    margin-left: 5px;
+    color : white;
 }
-
 .header-bar {
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    height: 15px;
-    margin-right: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  height: 15px;
+  margin-right: 5px;
 }
-
-.header-bar-search {
+.header-bar-search{
     width: 30;
     border: 2px solid rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    background-color:  rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
 }
 
 
@@ -109,12 +103,13 @@ header {
     height: 50px;
 }
 
-.header-col-bar span {
+#mypage {
     background-color: white;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .content {
