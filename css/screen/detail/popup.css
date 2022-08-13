@@ -20,7 +20,6 @@
 
 .popup_map {
     width: 100%;
-    /* margin: 0 173px 63px 173px; */
 }
 
 /* 현재위치 */
@@ -43,7 +42,6 @@
     font-weight: 400;
     font-size: 25px;
     line-height: 22px;
-    /* identical to box height, or 88% */
 
     letter-spacing: 0.1em;
 
@@ -62,7 +60,6 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
-    /* identical to box height, or 138% */
 
     letter-spacing: 0.1em;
 
@@ -71,12 +68,10 @@
 
 /* 선 */
 .line {
-    /* position: absolute; */
     width: 1100px;
     height: 0px;
 
     border: 2px solid rgba(153, 153, 153, 0.99);
-    /* margin-left: 33px; */
     margin: 19px 0 41px 33px;
 }
 
@@ -114,7 +109,6 @@
 /* honbab box */
 
 .honbab_box {
-    /* width: 60%; */
     width: 580px;
     height: 156px;
     background-color: var(--mint);
@@ -336,7 +330,6 @@ hr.timeline {
 
 .box_title2 {
     display: flex;
-    /* padding: 30px; */
 }
 
 
@@ -347,7 +340,6 @@ hr.timeline {
     border: 1px solid black;
     border-radius: 50px;
     margin: 16px 0 0 12px;
-    /* margin-right: 20px; */
 }
 
 .box_text_wrap2 {
@@ -367,7 +359,6 @@ hr.timeline {
     font-weight: 500;
     font-size: 15px;
     line-height: 22px;
-    /* or 147% */
 
     letter-spacing: 0.1em;
 
@@ -385,7 +376,6 @@ hr.timeline {
     font-weight: 350;
     font-size: 15px;
     line-height: 22px;
-    /* or 147% */
 
     letter-spacing: 0.1em;
 
@@ -397,7 +387,6 @@ hr.timeline {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* margin-top: 15px; */
 }
 
 .box_info_icon_wrap2 {
@@ -413,13 +402,6 @@ hr.timeline {
     margin: 10px;
 }
 
-/* .box_info_icon_wrap2 .fa-heart:before {
-    color: black;
-}
-
-.box_info_icon_wrap2 .fa-comment:before {
-    color: black;
-} */
 
 .box_info_icon_wrap2 .fa-heart:hover {
     color: red;
