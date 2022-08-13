@@ -168,8 +168,6 @@
     padding-left: 21px;
 }
 
-
-
 .box_info_icon_wrap {
     display: flex;
     align-items: center;
@@ -381,7 +379,6 @@ hr.timeline {
 
     color: rgba(10, 10, 10, 0.95);
 }
-
 
 .box_info2 {
     display: flex;
