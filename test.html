@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">Click!</button>
+
+    <div id="modal" class="modal_Wrap">
+        <div class="modal_Content">
+            <span class="close">&times;</span>
+            <p>모달 연습</p>
+        </div>
+    </div>
+
+
+
+    <style>
+        * {
+            /*전체 폰트 지정*/
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+
+            padding: 20px;
+            border: none;
+            border-radius: 4px;
+            color: black;
+            background-color: lightsalmon;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .modal_Wrap {
+            /*모달창에 전체틀*/
+            display: none;
+            position: fixed;
+            padding-top: 100px;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: auto;
+            z-index: 1;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal_Content {
+            /*모달창의 메인*/
+            margin: auto;
+            padding: 20px;
+            width: 80%;
+            border: 1px solid grey;
+            background-color: #fff;
+        }
+
+        .modal_Content p {
+            /*모달창의 본문*/
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .close {
+            /*모달창을 닫는 X버튼*/
+            float: right;
+            color: grey;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            /*X버튼에 마우스가 올라가거나 요소가 선택된 경우, 이벤트 상태 일때 실행*/
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+
+
+    <script>
+        const modal = document.getElementById('modal');
+        // id값이 modal인 속성을 찾아서 modal변수에 할당
+
+        const button = document.getElementById('btn');
+        // id값이 btn인 속성을 찾아서 button변수에 할당
+
+        const span = document.querySelector('.close');
+        // class값이 close인 속성을 찾아 span변수에 할당
+
+        //다른예로 
+        //const span = document.getElementByClassName('close')[0];
+        //이렇게 선언해도 됩니다. 
+
+        //위 선언방식이 저는 이해되지 않아서 querySelector를 사용했습니다.
+        //MDN이나 Stackoverflow에서 찾은바로는 "getElementsByClassName은(는) 단일 요소가 아닌 HTMLCollection을 반환하기 때문에 필요하기 때문"
+        //이라고 하는데 자세한 내용은 이 링크를 타고 들어가보시면 될것 같습니다.
+        //https://stackoverflow.com/questions/50671701/why-is-0-needed-for-getelementsbyclassname-to-work-when-theres-only-one-class/50671709
+        //https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName
+
+        button.onclick = function () {
+            modal.style.display = 'block';
+        }
+        //버튼을 클릭했을때 modal창을 보여준다.
+
+        span.onclick = function () {
+            modal.style.display = 'none';
+        }
+        //X버튼을 클릭했을때 modal창을 닫는다.(안보이게 한다.)
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+        //사용자가 모달창 외부의 아무 곳이나 클릭하면 모달창을 닫는다.(안보이게 한다.)
+    </script>
+</body>
+
+</html>

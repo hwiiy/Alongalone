@@ -198,6 +198,13 @@ justify-content: center;
 /* popup */
 /* popup */
 /* popup */
+
+.blur {
+    width: 100vw;
+    height: 100vh;
+    color: #000000;
+    opacity: 0.5;
+}
  
 
 
@@ -385,4 +392,7 @@ hr {
 }
 
 
-
+/* counter */
+.btn_clicked {
+    color: tomato;
+}
