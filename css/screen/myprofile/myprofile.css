@@ -115,11 +115,12 @@ header {
 .content {
     width: 1203px;
     height:100%;
-    margin-left: 176px;
+    margin-left: 150px;
     margin-top: 100px;
+    /* display: flex; */
 }
 
-.content_left {
+/* .content_left {
     width: 888px;
     float:left;
     box-sizing: border-box;
@@ -132,20 +133,25 @@ header {
     float:right;
     box-sizing: border-box;
     background-color: transparent;
-}
+} */
 
 .profile {
-    margin-top: 50px;
-    width: 100%;
+    margin-top: 20px;
+    /* width: 100%; */
+    /* justify-content: flex-start; */
+    height: 110px;
+    box-sizing: border-box;
+    
 }
 
 .profile_left {
-    width: 10%;
+    width: 5%;
     padding-left: 36px;
     padding-bottom: 30px;
     padding-top: 0px;
     float:left;
     box-sizing: border-box;
+    margin-right: 0;
 }
 
 .profile_right_float {
@@ -153,10 +159,13 @@ header {
 }
 
 .profile_right {
-    width: 60%;
-    margin-left: 223px;
+    width: 85%;
+    /* margin-left: 46px; */
+    margin-top: 0;
     float: right;
     box-sizing: border-box;
+    overflow: hidden;
+    /* justify-content: left; */
 }
 
 .profile_right_left {
@@ -173,8 +182,8 @@ header {
 
 .profile_bg {
     display:flex;
-    width: 160px;
-    height: 160px;
+    width: 105px;
+    height: 105px;
     border-radius: 50%;
 }
 
@@ -197,8 +206,8 @@ header {
 .profile_img {
     margin: auto;
     background-color: white;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
@@ -271,21 +280,41 @@ header {
             inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
-.details {
+.details_ {
     font-family: 'Noto Sans HK';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 350;
     font-size: 16px;
     line-height: 22px;
+
     letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.95);
+
+    opacity: 0.8;
     display: flex;
     float: left;
+}
 
+.details {
+    /* width: 60%; */
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 22px;
+
+    letter-spacing: 0.1em;
     color: rgba(255, 255, 255, 0.95);
+
+    opacity: 0.8;
+    display: block;
+    float: right;
+    /* position: relative; */
 }
 
 .info {
     margin-right: 22px;
+    /* position: absolute; */
 }
 
 hr {
@@ -298,11 +327,18 @@ hr {
 
 /* 게시물 */
 
+/* .posts {
+    display: flex;
+    justify-content: center;
+} */
+
 .post {
     width: 270px;
     height: 264px;
     border-radius: 10px;
     margin: 16px 17px 16px 17px;
+    flex:1;
+    
 }
 
 .post.green {
@@ -323,8 +359,9 @@ hr {
 
 .post_row {
     display: flex;
-    float: left;
-    
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 /* 다른 카테고리 */
@@ -342,21 +379,6 @@ hr {
 
     color: #FFFFFF;
 }
-
-/* .category_title {
-    padding-top: 14px;
-    padding-left: 20px;
-    text-align: left;
-    font-family: 'Noto Sans HK';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 29px;
-    letter-spacing: 0.1em;
-
-    color: rgba(10, 10, 10, 0.95);
-    background-color: transparent;
-} */
 
 .category_title {
     border:0;
@@ -418,4 +440,84 @@ hr {
     padding:7px 7px 7px 7px;
 
     margin: 21px 33px 21px 163px;
+}
+
+
+/* 프로필 바로 아래 카테고리 선택 */
+
+.category {
+    height: 100%;
+    margin-bottom: 9px;
+
+}
+
+.category.left {
+    margin: 0;
+    float: left;
+    box-sizing: border-box;
+}
+
+.category.right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.w-btn {
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 29px;
+
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    height: 32px;
+
+    position: relative;
+    display: inline-block;
+    /* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); */
+    text-decoration: none;
+    transition: 0.25s;
+    margin-bottom: 0;
+}
+
+.w-btn.select {
+    background: #F5F5F5;
+    border: 1px solid #F5F5F5;
+    opacity: 0.8;
+    border-radius: 5px;
+
+}
+
+.w-btn.not {
+    opacity: 0.8;
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
+
+}
+
+.category.details {
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 138% */
+
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.95);
+
+    opacity: 0.8;
+    display: flex;
+    float: left;
+    margin-right: 230px;
+}
+
+.info2_ {
+    margin-right: 600px;
+}
+
+.info2 {
+    margin-right: 118px;
 }
