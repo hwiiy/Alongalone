@@ -14,7 +14,9 @@
 /* mypage */
 
 /* detail */
-@import url("./css/screen/detail/honbabdetail.css");
+@import url("./newdetailpost.css"); /* detailpost css 경로 설정 똑바로 해두기 */
+
+
 
 
 *, body {
