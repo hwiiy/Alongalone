@@ -460,7 +460,6 @@ hr {
 .category.right {
     float: right;
     box-sizing: border-box;
-    justify-content: fle;
 }
 
 .w-btn {
@@ -512,6 +511,11 @@ hr {
     opacity: 0.8;
     display: flex;
     float: left;
+    margin-right: 230px;
+}
+
+.info2_ {
+    margin-right: 600px;
 }
 
 .info2 {
