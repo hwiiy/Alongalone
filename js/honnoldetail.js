@@ -19,3 +19,4 @@ function counter() {
    
 }
 
+countHeart.addEventListener("click",counter);
