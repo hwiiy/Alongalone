@@ -1,12 +1,139 @@
+.container_title {
+    font-size: 20px;
+}
+
+
+.container_wrap {
+    display: flex;
+    justify-content: center;
+}
+
 .container {
-    background-color: lightcyan;
+    background-color: #2C2D2C;
     margin-top: 150px;
+    width: 80%;
+    height: 600px;
+    
 }
 
 .container_title {
-    color: brown;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
+    opacity: 50%;
 }
 
 .container_box {
-    border: 1px solid blue;
+    margin-left: 20px;
+    height: 500px;
+}
+
+.form-wrap {
+    background-color: tomato;
+}
+
+
+.titlecategorywrap{
+    display: flex;
+}
+
+/* 제목 */
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.title label {
+    color: white;
+    margin-right: 30px;
+}
+
+.title input {
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightgrey;
+
+}
+
+/* 카테고리 */
+.category{
+    height:50px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    border-bottom: 1px solid white;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.category label{
+    margin-right: 20px;
+
+}
+.category select {
+    border: none;
+    border-radius: 5px;
+    background-color: lightgrey;
+    color: rgba(0,0,0,0.7);
+    padding: 5px;
+    align-items: center;
+}
+
+
+
+/* 첨부파일 */
+.file {
+    background-color: blanchedalmond;
+}
+
+/* 장소 */
+
+.space {
+    background-color: aquamarine;
+}
+
+/* 내용작성 */
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content label {
+    color: white;
+    margin-left: 45px;
+}
+
+.content_box_wrap {
+    display: flex;
+    justify-content: center;
+}
+.content textarea {
+    border-radius: 5px;
+    background-color: white;
+    opacity: 60%;
+    height: 400px;
+    width: 700px;
+}
+
+
+/* 버튼 */
+
+.btn_bg {
+    display: flex;
+    justify-content: center;
+}
+.register {
+    padding: 10px;
+    background-color: aquamarine;
+    border:none;
+    border-radius: 4px;
 }
