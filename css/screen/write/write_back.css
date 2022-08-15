@@ -1,0 +1,12 @@
+.container {
+    background-color: lightcyan;
+    margin-top: 150px;
+}
+
+.container_title {
+    color: brown;
+}
+
+.container_box {
+    border: 1px solid blue;
+}

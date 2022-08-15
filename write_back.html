@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- bootstrap -->
+    <!-- bootstrap
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/screen/write/write_back.css">
     <title>혼밥게시판</title>
 </head>
 
@@ -27,36 +28,31 @@
     <!-- header -->
     <header>
 
-        <a href="index.html">
-            <div class="header-col">
+        <a class="header-col" href="index.html">
+            <div class="header-col1">
                 <img class="header-logo" src="img/logowhite.PNG">
                 <div class="header-title">
-                    <span>along</span>
                     <span>alone</span>
+                    <span>along</span>
                 </div>
 
             </div>
         </a>
 
-        <div class="header-col">
+        <div class="header-col2">
             <a href="index.html">혼밥</a>
             <a href="honsul.html">혼술</a>
             <a href="honcafe.html">혼카페</a>
-            <a href="honnol.html">혼놀</a>
+            <a href="honmap.html">혼맵</a>
         </div>
 
         <span class="header-col-bar">
-            <div class="header-bar"></div>
-            <input class="header-bar-search" type="text">
 
-            <img src="img/scrap.png" alt="">
+            <img src="img/saessak.png" alt="">
             <img src="img/alarm.png" alt="">
-            <!-- mypage로 가게 수정해야 함 -->
             <a href="#">
-                <div id="mypage"></div>
+                <div id="mypage"><i class="fa-solid fa-user fa-lg"></i></div>
             </a>
-
-
         </span>
 
 
@@ -65,10 +61,10 @@
     <!-- 글쓰기 화면 -->
 
     <div class="container">
-        <h2 class="container title">게시판 글쓰기</h2>
+        <h2 class="container_title"> along alone bulletin board</h2>
         <hr class="line">
 
-        <div class="container box">
+        <div class="container_box">
             <form action="{% url 'create' %}" method="POST">
                 <!-- {% url은 제출버튼 누르면 저 함수 실행하는 url %}-->
                 {% csrf_token %}
