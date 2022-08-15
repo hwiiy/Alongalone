@@ -17,68 +17,29 @@
     <div id="modal" class="modal_Wrap">
         <div class="modal_Content">
 
-            <!-- popup -->
-            <div id="popup">
+            <!-- 후원 팝업 -->
+            <div class="s_popup_wrap">
 
-                <div class="popup_screen">
-                    <!-- 프로필 -->
-                    <div class="profile">
-                        <span class="close">&times;</span>
-                        <div class="profile_picture">
-                            <div class="profile_bg green">
-                                <span class="profile_img"></span>
-                            </div>
-                        </div>
-                        <!-- <br><br> -->
-
-                        <!-- 개인 정보 -->
-                        <div class="name">김얼롱</div>
-                        <br>
-
-                        <!-- 버튼 -->
-                        <button class="follow_button green" type="button">팔로우</button>
-
-                        <br><br>
+                <button type="button" id="s_popup">후원하기</button>
+                <!-- 후원하기 버튼 클릭하면 팝업창 -->
+                <div id="popup" class="hidden">
+                    <div class="content">
+                        <!-- B : 보유새싹 계산 -->
+                        <div class="how_much">
+                            내 보유새싹 : 10잎
+                        </div><br>
                         <div class="details">
-                            <div class="info">게시물 100</div>
-                            <div class="info">팔로워 100</div>
-                            <div class="info">팔로잉 100</div>
+                            <!-- B : 사용한 새싹 계산 -->
+                            <div class="used">새싹 5잎을 사용하여</div><br>
+                            <!-- B : 게시글 제목 가져오기 -->
+                            <div class="title">수성구 상무초밥 혼밥후기</div><br>
+                            <div class="used">콘텐츠를 후원합니다.</div><br>
                         </div>
-
-                    </div>
-
-                    <hr>
-
-                    <!-- about me -->
-                    <div class="about_me">
-                        <div class="about_me title">
-                            About me
-                        </div>
-                        <div class="about_me text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quae perspiciatis autem
-                            alias soluta
-                            fuga error assumenda omnis maiores commodi nisi, cumque possimus. Laboriosam, eaque ex
-                            asperiores
-                            fuga
-                            ea perspiciatis.
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <!-- picture -->
-                    <div class="pictures">
-                        <div class="picture title">
-                            Pictures
-                        </div>
-                        <div class="posts">
-                            <div class="post_row">
-                                <div class="post green"></div>
-                                <div class="post green"></div>
-                            </div>
-                        </div>
+                        <button class="cancelBtn">취소</button>
+                        <button class="confrimBtn">확인</button>
                     </div>
                 </div>
+
             </div>
 
 
@@ -95,155 +56,6 @@
 
 
 
-    <div class="scrollWrap">
-
-
-        <!-- left content -->
-        <div class="left_box">
-            <div class="total_post_btn"><i class="fa-solid fa-chevron-left"></i>전체 게시물 보기</div>
-
-
-            <!-- B : 여기(h1)에 게시물 제목이 와야 함!!! -->
-            <h1>수성구 상무 초밥 혼밥 후기 게시물 제목</h1>
-            <!-- B : h5에 작성 날짜가 와야 함 -->
-            <h5>작성 날짜</h5>
-            <!-- B : p에 게시물 내용 와야 함 -->
-            <p>게시물내용 게시물내용 게시물내용 게시물내용
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic odit quia minus pariatur consequatur
-                alias
-                temporibus omnis cumque velit quis. Consectetur eos voluptates incidunt debitis expedita ipsum
-                adipisci
-                fuga sit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tenetur ipsum commodi libero
-                molestias! Placeat nemo culpa adipisci magni. Voluptates, dicta est mollitia ut aut provident! Totam
-                temporibus magnam similique!
-            </p>
-
-            <!-- B : detail_post_img의 src에 게시물 상세 이미지가 와야 함 -->
-            <img class="detail_post_img" src="" alt="">
-
-            <!-- B : 해당 게시물의 장소가 와야 함 -->
-            <!-- B : detail_location_col 자식요소인 h4에 주소, h5에 운영시간-->
-            <div class="detail_location">
-                <span class="detail_location_col"><i class="fa-solid fa-location-dot fa-2x"></i></span>
-                <span class="detail_location_col">
-                    <h4>대구광역시 북구 대학로 24번길</h4>
-                    <h5>9:00 ~ 22:00</h5>
-                    <!-- popup 생성 해야함!!!!!!!! -->
-                </span>
-
-            </div>
-
-
-
-
-            <!-- right content -->
-
-        </div>
-
-        <!-- scroll -->
-        <div class="scroll">
-
-            <!-- right content -->
-            <div class="right_box">
-
-
-                <h1>얼롱인 소개</h1>
-
-                <!-- 가로 border -->
-                <hr>
-
-
-
-                <div class="user_profile">
-                    <div class="user_profile_img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="user_profile_col">
-                        <div class="user_profile_name">사용자이름</div>
-                        <button class="user_profile_follow">+follow</button>
-                    </div>
-                </div>
-
-                <div class="user_profile_message">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minima est ex! Dolorum, placeat!
-                    Cumque doloribus, harum et animi tempore velit, eum in ea accusantium, quas accusamus earum porro
-                    officiis!
-                </div>
-
-                <!-- support btn -->
-
-                <button class="support_btn">
-                    얼롱인에게 새싹 후원하기
-                </button>
-
-                <!-- 가로 border -->
-                <hr>
-
-                <h3>수민님의 다른 게시물</h3>
-                <!-- B : 해당 유저의 다른 게시글을 띄워야 함 -->
-                <div class="another_post">
-                    <span class="another_post_title">게시글 제목</span>
-                    <span class="another_post_space">장소</span>
-                </div>
-
-                <div class="another_post">
-                    <span class="another_post_title">게시글 제목</span>
-                    <span class="another_post_space">장소</span>
-                </div>
-                <div class="another_post">
-                    <span class="another_post_title">게시글 제목</span>
-                    <span class="another_post_space">장소</span>
-                </div>
-
-                <!-- 가로 border -->
-                <hr>
-
-
-                <!-- 새싹 후원하기 -->
-
-
-                <h4>새싹 후원하기</h4>
-
-
-
-                <button class="first_support_box">
-                    500원 +
-                </button>
-
-                <div class="support_encourage">
-                    <p>
-                        "자라나는 콘텐츠 새싹에게 새싹 후원으로 마음을 전해보세요"
-                    </p>
-                </div>
-                <!-- B : 후원금 계산 적용  -->
-                <div class="detail_support_box">
-
-
-                    <h4>추가 후원금 (선택) </h4>
-                    <input type="number">
-
-                    <button>+1천원</button>
-                    <button>+5천원</button>
-                    <button>+1만원</button>
-                    <button>후원하기</button>
-                </div>
-
-
-                <!-- 가로 border -->
-                <hr>
-
-                <!-- 광고,이벤트 이미지 랜덤재생 -->
-                <div id="adBox">
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
 
 
 
@@ -264,7 +76,7 @@
 
         const button = document.querySelector('.box_img');
 
-        const span = document.querySelector('.close');
+        const cancelBtn = document.querySelector('.cancelBtn');
 
 
         button.onclick = function () {
@@ -272,10 +84,10 @@
         }
         //버튼을 클릭했을때 modal창을 보여준다.
 
-        span.onclick = function () {
+        cancelBtn.onclick = function () {
             modal.style.display = 'none';
         }
-        //X버튼을 클릭했을때 modal창을 닫는다.
+        //cancle 버튼을 클릭했을때 modal창을 닫는다.
 
         window.onclick = function (event) {
             if (event.target == modal) {
@@ -283,36 +95,6 @@
             }
         }
         //사용자가 모달창 외부의 아무 곳이나 클릭하면 모달창을 닫는다.
-
-        // random img play
-
-        const adBox = document.getElementById("adBox")
-
-        const colors = [
-            "#ef5777",
-            "#575fcf",
-            "#4bcffa",
-            "#34e7e4",
-            "#0be881",
-            "#f53b57",
-            "#3c40c6",
-            "#0fbcf9",
-            "#00d8d6",
-            "#05c46b",
-            "#ffc048",
-            "#ffdd59",
-            "#ff5e57",
-            "#d2dae2",
-            "#485460",
-            "#ffa801",
-            "#ffd32a",
-            "#ff3f34"
-        ];
-
-        setInterval(() => {
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
-            adBox.style.background = `${randomColor}`;
-        }, 2000);
     </script>
 
 </body>

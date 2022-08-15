@@ -162,6 +162,31 @@
                     <button>후원하기</button>
                 </div>
 
+                <!-- 후원 팝업 관련 -->
+                <!-- 후원하기 버튼 클릭하면 팝업창 -->
+                <button type="button" id="s_popup">후원하기</button>
+                
+                <div id="popup" class="hidden">
+                    <div class="content">
+                        <!-- B : 보유새싹 계산 -->
+                        <div class="how_much">
+                            내 보유새싹 : 10잎
+                        </div><br>
+                        <div class="details">
+                            <!-- B : 사용한 새싹 계산 -->
+                            <div class="used">새싹 5잎을 사용하여</div><br>
+                            <!-- B : 게시글 제목 가져오기 -->
+                            <div class="title">수성구 상무초밥 혼밥후기</div><br>
+                            <div class="used">콘텐츠를 후원합니다.</div><br>
+                        </div>
+                        <button>취소</button>
+                        <button>확인</button>
+                    </div>
+
+
+                </div>
+
+
 
                 <!-- 가로 border -->
                 <hr>
@@ -212,6 +237,21 @@
             const randomColor = colors[Math.floor(Math.random() * colors.length)];
             adBox.style.background = `${randomColor}`;
         }, 2000);
+    
+    
+      // 팝업 관련 js
+      const place = document.querySelector("#s_popup");
+        const popup = document.getElementById("popup")
+
+        function showRocation() {
+            popup.classList.remove("hidden");
+        }
+
+        place.addEventListener("click", showRocation)
+
+    
+    
+    
     </script>
 
 
@@ -297,10 +337,12 @@
             width: 80%;
         }
 
-        .user_profile_img {
+        .user_profile_img img{
             width: 60px;
             height: 60px;
-            background-color: aliceblue;
+            background-size: cover;
+            background-repeat: no-repeat;
+    
 
         }
 
@@ -376,6 +418,18 @@
             height: 500px;
             border: 1px solid black;
 
+        }
+
+
+
+
+
+            /*  후원 팝업 */
+            .content {
+            width: 489px;
+            height: 349px;
+            background-color: blueviolet;
+            text-align: center;
         }
     </style>
 
