@@ -8,27 +8,69 @@
 
     <!-- css -->
     <link rel="stylesheet" href="{% static './style.css'}">
+        <!-- favicon -->
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
+        
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./css/screen/main/honbab.css">
+        <link rel="stylesheet" href="/css/screen/sponsor/sponsor.css">
 
     <title>sponsor_status</title>
 </head>
 
 <body>
+    <!-- header -->
+    <header>
+    
+        <a class="header-col" href="index.html">
+            <div class="header-col1">
+                <img class="header-logo" src="img/logowhite.PNG">
+                <div class="header-title">
+                    <span>alone</span>
+                    <span>along</span>
+                </div>
+    
+            </div>
+        </a>
+    
+        <div class="header-col2">
+            <a href="index.html">혼밥</a>
+            <a href="honsul.html">혼술</a>
+            <a href="/html/home/honcafe.html">혼카페</a>
+            <a href="honmap.html">혼맵</a>
+        </div>
+    
+        <span class="header-col-bar">
+    
+            <img src="img/saessak.png" alt="">
+            <img src="img/alarm.png" alt="">
+            <a href="#">
+                <div id="mypage"><i class="fa-solid fa-user fa-lg"></i></div>
+            </a>
+        </span>
+    
+    
+    </header>
+
     <!-- 검은색 배경 네모 -->
     <div class="content">
         <h1>나의 이용 정보</h1>
         <div class="howmany">
+            <img src="/img/saessak.png" alt="">
             <p>보유 중인 새싹</p>
             <!-- B : 보유 중인 새싹 계산 -->
-            <p>10잎</p>
+            <p style="color:rgba(204, 249, 197, 1)">10잎</p>
             <button>충전하기</button>
         </div>
 
         <div class="category">
-            <h4>후원현황</h4>
-            <h4>충전하기</h4>
+            <a href="#">후원현황</a>
+            <a href="#">충전하기</a><br>
         </div>
+        <hr>
 
         <div class="letter">
+            <img src="/img/logo_sp.png" alt="">
             <h4>후원 현황 및 후원 이벤트 참여 내역을</h4>
             <p>확인할 수 있는 상세 페이지를 준비중입니다.</p>
             <p>빠른 시일 내에 서비스 할 수 있도록 노력하겠습니다.</p><br>
@@ -38,47 +80,7 @@
 
     </div>
 
-    <!-- css -->
-    <style>
-        body {
-            background-color: aliceblue;
-        }
-
-        .howmany {
-            background-color: pink;
-            padding: 50px;
-            display: block;
-        }
-
-        .howmany p {
-            float: left;
-            width: 20%;
-        }
-
-        .howmany button {
-            float: right;
-            width: 60%;
-        }
-
-        .category {
-            background-color: aquamarine;
-            padding: 50px;
-        }
-
-        .category h4 {
-            float: left;
-            margin-right: 30px;
-        }
-
-        .letter {
-            background-color: bisque;
-            border: 1px solid black;
-            margin: 30px;
-            padding: 50px;
-            text-align: center;
-        }
-
-    </style>
+    
 
     <!-- icon link -->
     <script src="https://kit.fontawesome.com/73b35ca8d6.js" crossorigin="anonymous"></script>

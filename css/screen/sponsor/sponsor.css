@@ -1,0 +1,134 @@
+.content {
+    width: 1055px;
+    height: 814px;
+
+    background: rgba(243, 252, 241, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 150px 209px 0 248px;
+}
+
+.content h1 {
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+    margin: 43px 0 36px 33px;
+    opacity: 0.33;
+}
+
+.howmany {
+    width: 500px;
+    height: 88px;
+    box-sizing: border-box;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: block;
+    margin: 0 0 0 26px;
+
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+
+    letter-spacing: 0.1em;
+
+    align-items: center;
+    padding: 33px 16px;
+    margin: 0 0 62px 26px;
+}
+
+.howmany img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.howmany p {
+    color: #FFFFFF;
+    float: left;
+    margin-right: 0.3em;
+    /* width: 30%; */
+}
+
+.howmany button {
+    float: right;
+    /* width: 60%; */
+}
+
+.category {
+    /* background-color: aquamarine; */
+    padding: 0px 0 20px 20px;
+    margin-left: 26px;
+}
+
+.category a {
+    float: left;
+    margin-right: 30px;
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+}
+
+hr {
+    opacity: 0.8;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    margin: 0 26px;
+}
+
+.letter {
+    width: 807px;
+    height: 284px;
+
+    border: 1px solid #CCF9C5;
+    border-radius: 10px;
+    text-align: center;
+    padding: 62px;
+    margin: 62px 62px;
+
+    /* margin: 30px;
+    padding: 50px; */
+}
+
+.letter img {
+    width: 109px;
+    height: 88px;
+}
+
+.letter h4 {
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+}
+
+.letter p {
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 33px;
+    /* or 165% */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+}
