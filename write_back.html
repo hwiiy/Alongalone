@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- bootstrap -->
+    <!-- bootstrap
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/screen/write/write_back.css">
     <title>혼밥게시판</title>
 </head>
 
@@ -27,36 +28,31 @@
     <!-- header -->
     <header>
 
-        <a href="index.html">
-            <div class="header-col">
+        <a class="header-col" href="index.html">
+            <div class="header-col1">
                 <img class="header-logo" src="img/logowhite.PNG">
                 <div class="header-title">
-                    <span>along</span>
                     <span>alone</span>
+                    <span>along</span>
                 </div>
 
             </div>
         </a>
 
-        <div class="header-col">
+        <div class="header-col2">
             <a href="index.html">혼밥</a>
             <a href="honsul.html">혼술</a>
             <a href="honcafe.html">혼카페</a>
-            <a href="honnol.html">혼놀</a>
+            <a href="honmap.html">혼맵</a>
         </div>
 
         <span class="header-col-bar">
-            <div class="header-bar"></div>
-            <input class="header-bar-search" type="text">
 
-            <img src="img/scrap.png" alt="">
+            <img src="img/saessak.png" alt="">
             <img src="img/alarm.png" alt="">
-            <!-- mypage로 가게 수정해야 함 -->
             <a href="#">
-                <div id="mypage"></div>
+                <div id="mypage"><i class="fa-solid fa-user fa-lg"></i></div>
             </a>
-
-
         </span>
 
 
@@ -65,23 +61,23 @@
     <!-- 글쓰기 화면 -->
 
     <div class="container">
-        <h2 class="container title">게시판 글쓰기</h2> 
+        <h2 class="container_title"> along alone bulletin board</h2>
         <hr class="line">
 
-        <div class="container box">
+        <div class="container_box">
             <form action="{% url 'create' %}" method="POST">
                 <!-- {% url은 제출버튼 누르면 저 함수 실행하는 url %}-->
                 {% csrf_token %}
                 <!-- 보안관련임. 무시해도 됌 -->
-            
+
                 <!-- <form action="write.jsp" method="post"> -->
                 <div class="form-group">
 
                     <div class="float">
                         <div class="float left">
                             <label for="title" style="color: white;">제목</label>
-                            <input type="text" class="form-control title" id="title" placeholder="제목을 입력해주세요." name="title" maxlength="80"
-                                required="required" pattern=".{4,100}">
+                            <input type="text" class="form-control title" id="title" placeholder="제목을 입력해주세요."
+                                name="title" maxlength="80" required="required" pattern=".{4,100}">
                         </div>
                         <div class="float right">
                             <!-- form 태그는 제출을 해야 값이 저장되서, 선택만 해도 되는 select 사용
@@ -95,9 +91,9 @@
                             </select>
                         </div>
                     </div>
-                    
+
                     <br>
-                    
+
                     <div class="float">
                         <div class="float left1">
                             <label for="title" style="color: white;">첨부파일</label>
@@ -105,97 +101,41 @@
                         </div>
                         <div class="float right1">
                             <label for="title" style="color: white;">장소</label>
-                            <input type="text" class="form-control title1" id="title" placeholder="클릭해주세요." name="title" maxlength="20">
+                            <input type="text" class="form-control title1" id="title" placeholder="클릭해주세요." name="title"
+                                maxlength="20">
                         </div>
                     </div>
-                    
 
 
-            
-                    
-            
+
+
+
+
                 </div>
                 <div class="form-group">
-                    <label for="body" style="color: white;" >내용</label>
-                    <textarea class="form-control passage" rows="3" id="body" name="body" placeholder="내용 작성"></textarea>
+                    <label for="body" style="color: white;">내용</label>
+                    <textarea class="form-control passage" rows="3" id="body" name="body"
+                        placeholder="내용 작성"></textarea>
                 </div>
                 <!-- 데이터 형식 정의할 떄 본문 body로 해서 content -> body로 바꿈 -->
-            
-            
+
+
             </form>
 
         </div>
         <button type="submit" class="btn btn-default">등록하기</button>
 
-        
+
     </div>
 
 
 
-    
+
 
     <!-- css -->
     <style>
         body {
             background-color: black
-        }
-
-        /* title */
-
-        .boardTitle {
-            display: flex;
-            flex-direction: column;
-            width: 400px;
-            height: 70px;
-            margin-top: 100px;
-            margin-left: 90px;
-        }
-
-        .boardTitle h1 {
-            margin: 10px;
-            font-size: 30px;
-            font-weight: 600;
-            color: var(--mint);
-        }
-
-        .boardTitle form {
-            position: relative;
-            ;
-        }
-
-        #check_box {
-            width: 150px;
-            padding: 5px;
-            background-color: var(--mint);
-            border-radius: 5px;
-            border: none;
-            position: absolute;
-            left: 10px;
-        }
-
-        /* board */
-
-        #board {
-            border-radius: 20px;
-            margin: 30px 100px;
-            background-color: aliceblue;
-        }
-
-        #board_btn {
-            height: 50px;
-            text-align: center;
-            font-size: 20px;
-            background-color: var(--mint);
-            color: rgba(0, 0, 0, 0.4);
-            font-weight: 500;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #board_btn:hover {
-            background-color: rgba(3, 113, 3, 0.324);
-            color: white;
         }
     </style>
 
@@ -206,4 +146,3 @@
 </body>
 
 </html>
-

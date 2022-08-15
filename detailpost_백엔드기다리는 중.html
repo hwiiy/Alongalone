@@ -5,95 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="test.css">
-    <title>Document</title>
+
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static './style.css'}">
+    <!-- <link rel="stylesheet" href="./css/screen/detail/newdetailpost.css"> -->
+
+
+
+    <title>detailpost</title>
 </head>
 
 <body>
 
-    <!-- 프로필 이미지 클릭하면 팝업창! -->
-    <div class="box_img"></div>
-
-    <div id="modal" class="modal_Wrap">
-        <div class="modal_Content">
-
-            <!-- popup -->
-            <div id="popup">
-
-                <div class="popup_screen">
-                    <!-- 프로필 -->
-                    <div class="profile">
-                        <span class="close">&times;</span>
-                        <div class="profile_picture">
-                            <div class="profile_bg green">
-                                <span class="profile_img"></span>
-                            </div>
-                        </div>
-                        <!-- <br><br> -->
-
-                        <!-- 개인 정보 -->
-                        <div class="name">김얼롱</div>
-                        <br>
-
-                        <!-- 버튼 -->
-                        <button class="follow_button green" type="button">팔로우</button>
-
-                        <br><br>
-                        <div class="details">
-                            <div class="info">게시물 100</div>
-                            <div class="info">팔로워 100</div>
-                            <div class="info">팔로잉 100</div>
-                        </div>
-
-                    </div>
-
-                    <hr>
-
-                    <!-- about me -->
-                    <div class="about_me">
-                        <div class="about_me title">
-                            About me
-                        </div>
-                        <div class="about_me text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quae perspiciatis autem
-                            alias soluta
-                            fuga error assumenda omnis maiores commodi nisi, cumque possimus. Laboriosam, eaque ex
-                            asperiores
-                            fuga
-                            ea perspiciatis.
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <!-- picture -->
-                    <div class="pictures">
-                        <div class="picture title">
-                            Pictures
-                        </div>
-                        <div class="posts">
-                            <div class="post_row">
-                                <div class="post green"></div>
-                                <div class="post green"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
 
 
-
-
-
-
-
-        </div>
-    </div>
-    </div>
-
-
+    <!-- detailPostbox -->
 
     <div class="scrollWrap">
 
@@ -148,7 +78,7 @@
             <div class="right_box">
 
 
-                <h1>얼롱인 소개</h1>
+                <h1>새싹러 소개</h1>
 
                 <!-- 가로 border -->
                 <hr>
@@ -157,14 +87,16 @@
 
                 <div class="user_profile">
                     <div class="user_profile_img">
+                        <!-- B : 사용자 이미지 나오게-->
                         <img src="" alt="">
                     </div>
                     <div class="user_profile_col">
                         <div class="user_profile_name">사용자이름</div>
+                        <!-- B : 사용자 이름 나오게-->
                         <button class="user_profile_follow">+follow</button>
                     </div>
                 </div>
-
+                <!-- B : 사용자 짧은 소개글 -->
                 <div class="user_profile_message">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minima est ex! Dolorum, placeat!
                     Cumque doloribus, harum et animi tempore velit, eum in ea accusantium, quas accusamus earum porro
@@ -216,6 +148,7 @@
                         "자라나는 콘텐츠 새싹에게 새싹 후원으로 마음을 전해보세요"
                     </p>
                 </div>
+
                 <!-- B : 후원금 계산 적용  -->
                 <div class="detail_support_box">
 
@@ -228,6 +161,31 @@
                     <button>+1만원</button>
                     <button>후원하기</button>
                 </div>
+
+                <!-- 후원 팝업 관련 -->
+                <!-- 후원하기 버튼 클릭하면 팝업창 -->
+                <button type="button" id="s_popup">후원하기</button>
+                
+                <div id="popup" class="hidden">
+                    <div class="content">
+                        <!-- B : 보유새싹 계산 -->
+                        <div class="how_much">
+                            내 보유새싹 : 10잎
+                        </div><br>
+                        <div class="details">
+                            <!-- B : 사용한 새싹 계산 -->
+                            <div class="used">새싹 5잎을 사용하여</div><br>
+                            <!-- B : 게시글 제목 가져오기 -->
+                            <div class="title">수성구 상무초밥 혼밥후기</div><br>
+                            <div class="used">콘텐츠를 후원합니다.</div><br>
+                        </div>
+                        <button>취소</button>
+                        <button>확인</button>
+                    </div>
+
+
+                </div>
+
 
 
                 <!-- 가로 border -->
@@ -247,44 +205,10 @@
 
 
 
+    <!-- js -->
 
-
-
-
-
-
-
-
-
-
-    <!-- JS-->
     <script>
-        // popup 관련
-        const modal = document.getElementById('modal');
-
-        const button = document.querySelector('.box_img');
-
-        const span = document.querySelector('.close');
-
-
-        button.onclick = function () {
-            modal.style.display = 'block';
-        }
-        //버튼을 클릭했을때 modal창을 보여준다.
-
-        span.onclick = function () {
-            modal.style.display = 'none';
-        }
-        //X버튼을 클릭했을때 modal창을 닫는다.
-
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = 'none';
-            }
-        }
-        //사용자가 모달창 외부의 아무 곳이나 클릭하면 모달창을 닫는다.
-
-        // random img play
+        // random color play
 
         const adBox = document.getElementById("adBox")
 
@@ -313,8 +237,204 @@
             const randomColor = colors[Math.floor(Math.random() * colors.length)];
             adBox.style.background = `${randomColor}`;
         }, 2000);
+    
+    
+      // 팝업 관련 js
+      const place = document.querySelector("#s_popup");
+        const popup = document.getElementById("popup")
+
+        function showRocation() {
+            popup.classList.remove("hidden");
+        }
+
+        place.addEventListener("click", showRocation)
+
+    
+    
+    
     </script>
 
+
+    <!-- css -->
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        /* scrollWrap */
+        .scrollWrap {
+            position: relative;
+            top: 100px;
+            width: 1500px;
+            margin: 20px;
+            box-sizing: border-box;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000000;
+        }
+
+        .left_box {
+            width: 50%;
+            background-color: lemonchiffon;
+            height: 500px;
+        }
+
+
+        /* scroll */
+        /* hide scrollbar but allow scrolling */
+        .scroll {
+            -ms-overflow-style: none;
+            /* for Internet Explorer, Edge */
+            scrollbar-width: none;
+            /* for Firefox */
+            overflow-y: scroll;
+        }
+
+        .scroll::-webkit-scrollbar {
+            display: none;
+            /* for Chrome, Safari, and Opera */
+        }
+
+
+        div.scroll {
+            border: solid 5px black;
+            border-radius: 5px;
+            height: 500px;
+            padding: 10px;
+            width: 500px;
+        }
+
+
+
+
+        .right_box {
+            background-color: lightsteelblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 99%;
+
+        }
+
+        /* 가로 border */
+
+        hr {
+            background-color: white;
+            height: 1px;
+            border: 0;
+            margin: 20px 0px;
+            width: 80%;
+        }
+
+        /* 얼롱인 소개  */
+        .user_profile {
+            background-color: #A7CCA2;
+            display: flex;
+            padding: 20px 0px;
+            box-sizing: border-box;
+            width: 80%;
+        }
+
+        .user_profile_img img{
+            width: 60px;
+            height: 60px;
+            background-size: cover;
+            background-repeat: no-repeat;
+    
+
+        }
+
+        /* user_profile_message */
+
+        .user_profile_message {
+            width: 80%;
+            font-size: 20px;
+        }
+
+        /* 다른 게시물 */
+
+        .another_post {
+            box-sizing: border-box;
+            width: 350px;
+            height: 100px;
+            background-color: aqua;
+            margin: 10px 30px;
+        }
+
+
+        /* 후원 관련 */
+        h4 {
+            width: 60%;
+            /* width 주면 좌측에 붙음 */
+            align-items: flex-start;
+        }
+
+        .support_encourage {
+            border: 1px solid white;
+            font-size: 20px;
+            width: 60%;
+            margin-top: 10px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+
+
+
+        }
+
+        .first_support_box {
+            display: flex;
+            background-color: #A7CCA2;
+            padding: 20px 0px;
+            border-radius: 10px;
+            width: 60%;
+
+        }
+
+        .detail_support_box {
+            width: 300px;
+            height: 250px;
+            border: 1px solid black;
+            margin: 30px;
+            background-color: lightpink;
+        }
+
+
+        .support_btn {
+
+            padding: 10px 80px;
+            cursor: pointer;
+
+        }
+
+        /* 광고,이벤트 이미지 랜덤재생 */
+
+
+        #adBox {
+            width: 300px;
+            height: 500px;
+            border: 1px solid black;
+
+        }
+
+
+
+
+
+            /*  후원 팝업 */
+            .content {
+            width: 489px;
+            height: 349px;
+            background-color: blueviolet;
+            text-align: center;
+        }
+    </style>
+
+    <!-- icon link -->
+    <script src="https://kit.fontawesome.com/73b35ca8d6.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
