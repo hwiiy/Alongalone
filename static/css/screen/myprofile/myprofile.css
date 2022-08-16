@@ -2,7 +2,6 @@
 예) 클릭하면 밑줄 생기는 것 등등 */
 @import url("/css/components/reset.css");
 
-
 * {
     box-sizing: border-box;
     background-color: black;
@@ -509,9 +508,10 @@ hr {
     color: rgba(255, 255, 255, 0.95);
 
     opacity: 0.8;
-    display: flex;
-    float: left;
-    margin-right: 230px;
+    /* justify-content: center; */
+    /* display: flex; */
+    /* float: left; */
+    margin-right: 500px;
 }
 
 .info2_ {
