@@ -68,7 +68,7 @@
             <div class="container_box">
                 <form action="{% url 'create' %}" method="POST">
                     <!-- {% url은 제출버튼 누르면 저 함수 실행하는 url %}-->
-                    <!-- {% csrf_token %} -->
+                    {% csrf_token %}
                     <!-- 보안관련임. 무시해도 됌 -->
 
                     <!-- <form action="write.jsp" method="post"> -->
