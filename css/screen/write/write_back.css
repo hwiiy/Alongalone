@@ -12,7 +12,7 @@
     background-color: #2C2D2C;
     margin-top: 150px;
     width: 80%;
-    height: 600px;
+    height: 620px;
     
 }
 
@@ -32,9 +32,11 @@
     background-color: tomato;
 }
 
+/* 제목,카테고리,첨부파일, 위치  */
 
-.titlecategorywrap{
+.titlecategoryfilelocation{
     display: flex;
+    justify-content: space-evenly
 }
 
 /* 제목 */
@@ -69,7 +71,6 @@
     display: flex;
     color: white;
     border-bottom: 1px solid white;
-    margin-left: 20px;
     padding: 0;
 }
 
@@ -86,22 +87,40 @@
     align-items: center;
 }
 
-
-
 /* 첨부파일 */
 .file {
-    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+    width: 200px;
+
 }
 
+.file label {
+    color: white;
+    width: 180px;
+}
+
+.file input {
+    color: white;
+
+}
 /* 장소 */
 
 .space {
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-bottom: 1px solid white;
 }
 
+.space input {
+    width: 100px;
+}
 /* 내용작성 */
 
 .content {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 
@@ -109,23 +128,26 @@
 
 .content label {
     color: white;
-    margin-left: 45px;
+    margin-left: 70px;
 }
 
 .content_box_wrap {
     display: flex;
-    justify-content: center;
+    margin-top: 10px;
+
+  
+  justify-content: center;
 }
 .content textarea {
     border-radius: 5px;
+    border: none;
     background-color: white;
-    opacity: 60%;
     height: 400px;
-    width: 700px;
+    width: 1000px;
 }
 
 
-/* 버튼 */
+/* 작성하기 버튼 */
 
 .btn_bg {
     display: flex;
@@ -133,7 +155,15 @@
 }
 .register {
     padding: 10px;
-    background-color: aquamarine;
+    margin-top: 10px;
+    width: 1000px;
+    background-color:rgb(213, 213, 213);
     border:none;
     border-radius: 4px;
+    font-size: 15px;
+    box-shadow: 0px 3px 3px lightgray;
+}
+.register:hover {
+    background-color: gray;
+    color: white;
 }

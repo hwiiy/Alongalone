@@ -62,7 +62,7 @@
 
     <div class="container_wrap">
         <div class="container">
-            <h2 class="container_title"> along alone bulletin board</h2>
+            <h2 class="container_title">bulletin board</h2>
             <hr class="line">
 
             <div class="container_box">
@@ -75,8 +75,8 @@
                     <div class="form_wrap">
 
 
-                        <!-- 제목과 카테고리 -->
-                        <div class="titlecategorywrap">
+                        <!-- 제목,카테고리,첨부파일, 위치 -->
+                        <div class="titlecategoryfilelocation">
                             <div class="title">
                                 <label>Title</label>
                                 <input type=" text" class="titleinput" placeholder="제목을 입력해주세요." name="title"
@@ -94,33 +94,36 @@
                                     <option value="4">혼놀</option>
                                 </select>
                             </div>
-                        </div>
 
 
-                        <br>
 
-                        <div class="file">
-                            <div class="file_inner">
-                                <label>첨부파일</label>
+                            <br>
+
+
+
+                            <div class="file">
+                                <label>attached file</label>
                                 <input type="file" name="photo" class="photo">
+                            </div>
+
+
+                            <div class="space">
+                                <label>Location</label>
+                                <input type="text" class="form-control title1" id="title" placeholder="클릭해주세요."
+                                    name="title" maxlength="20">
                             </div>
                         </div>
 
-                        <div class="space">
-                            <label>장소</label>
-                            <input type="text" class="form-control title1" id="title" placeholder="클릭해주세요." name="title"
-                                maxlength="20">
-                        </div>
-
+                        <!-- 내용작성란 -->
                         <div class="content">
-                            <label>내용</label>
+                            <label>Contents</label>
                             <div class="content_box_wrap">
                                 <textarea rows="3" id="body" name="body" placeholder="내용 작성"></textarea>
                             </div>
                         </div>
-
+                        <!-- 작성하기 버튼 -->
                         <div class="btn_bg">
-                            <button type="submit" class="register">등록하기</button>
+                            <button type="submit" class="register">작성하기</button>
                         </div>
                         <!-- 데이터 형식 정의할 떄 본문 body로 해서 content -> body로 바꿈 -->
                     </div>
